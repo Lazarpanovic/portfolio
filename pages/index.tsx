@@ -34,6 +34,8 @@ export default function Home() {
           content="Full stack developer focused on backend systems, scalable APIs, and modern web applications."
         />
 
+        <link rel="canonical" href="https://www.lazarpanovic.dev/" />
+
         {/* Open Graph */}
         <meta
           property="og:title"
@@ -45,9 +47,10 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://laki-portfolio.vercel.app/og.png"
+          content="https://www.lazarpanovic.dev/og.png"
         />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.lazarpanovic.dev/" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -61,7 +64,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://laki-portfolio.vercel.app/og.png"
+          content="https://www.lazarpanovic.dev/og.png"
         />
       </Head>
 
