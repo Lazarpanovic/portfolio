@@ -1,6 +1,3 @@
-import mwmockup from "../../public/mwmockup.png";
-import ebankmockup from "../../public/ebankmockup.png";
-import spinmockup from "../../public/spinmockup.png";
 import { Project } from "../types/portfolio";
 
 export const projects: Project[] = [
@@ -23,6 +20,16 @@ export const projects: Project[] = [
     desktopImage: "/mw-concept-laptop.png",
     mobileImage: "/mw-concept-mobile.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
+    category: "Frontend",
+  },
+  {
+    title: "Lucky Spin",
+    description:
+      "A modern reward wheel simulator rebuilt from a vanilla JavaScript project into a component-based Next.js application with weighted rewards, inventory management, spin history, game statistics, localStorage persistence, and a responsive dark dashboard UI.",
+    href: "https://lucky-spin.lazarpanovic.dev",
+    desktopImage: "/lucky-spin-laptop.png",
+    mobileImage: "/lucky-spin-mobile.png",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     category: "Frontend",
   },
 ];
