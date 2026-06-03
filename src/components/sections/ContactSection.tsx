@@ -1,4 +1,8 @@
-import { AiOutlineCloudDownload, AiOutlineMail } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiOutlineCloudDownload,
+  AiOutlineMail,
+} from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 import ContactItem from "../ui/ContactItem";
@@ -44,9 +48,9 @@ export default function ContactSection() {
               <div className="mt-6 grid gap-3 sm:mt-8 sm:gap-4">
                 <div className="rounded-[1.1rem] border border-zinc-200 bg-white px-4 py-3 shadow-sm dark:border-white/10 dark:bg-white/5 sm:rounded-[1.25rem]">
                   <ContactItem
-                    href={personalInfo.phoneHref}
-                    label={personalInfo.phone}
-                    icon={BsTelephoneFill}
+                    href={personalInfo.linkedin}
+                    label={personalInfo.name}
+                    icon={AiFillLinkedin}
                   />
                 </div>
 
