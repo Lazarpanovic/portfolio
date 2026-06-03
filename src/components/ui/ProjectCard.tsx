@@ -15,11 +15,23 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       className="group overflow-hidden rounded-[2rem] border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
     >
       <div className="border-b border-zinc-200 bg-zinc-100 p-4 dark:border-white/10 dark:bg-zinc-900/80">
-        <div className="overflow-hidden rounded-[1.25rem] bg-white dark:bg-zinc-950">
+        <div className="relative flex min-h-[260px] items-center justify-center overflow-hidden rounded-[1.25rem] bg-white px-6 py-10 dark:bg-zinc-950 sm:min-h-[300px]">
+          {/* Laptop */}
           <Image
-            src={project.image}
-            alt={project.title}
-            className="w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+            src={project.desktopImage}
+            alt={`${project.title} desktop mockup`}
+            width={1100}
+            height={700}
+            className="w-full max-w-[760px] object-contain transition duration-500 group-hover:scale-[1.02]"
+          />
+
+          {/* Phone */}
+          <Image
+            src={project.mobileImage}
+            alt={`${project.title} mobile mockup`}
+            width={400}
+            height={800}
+            className="xs:w-[230px] absolute bottom-[10%] right-[-15%] z-10 w-[200px] object-contain drop-shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-[-6deg] group-hover:scale-[1.05] sm:w-[350px] md:bottom-[9%] md:right-[-13%] md:w-[230px] lg:right-[-12%] lg:w-[245px] xl:w-[260px]"
           />
         </div>
       </div>

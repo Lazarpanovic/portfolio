@@ -21,7 +21,7 @@ export default function FeaturedProjectCard({
           <div className="relative flex min-h-[220px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-white px-6 py-10 dark:bg-zinc-950">
             {/* Laptop */}
             <Image
-              src="/personal-finance-laptop.png"
+              src={project.desktopImage}
               alt="Laptop view"
               width={1100}
               height={700}
@@ -31,7 +31,7 @@ export default function FeaturedProjectCard({
 
             {/* Phone */}
             <Image
-              src="/personal-finance-mobile.png"
+              src={project.mobileImage}
               alt="Mobile view"
               width={400}
               height={800}

@@ -4,11 +4,12 @@ import { StaticImageData } from "next/image";
 export type Project = {
   title: string;
   description: string;
-  image: StaticImageData;
   href: string;
+  desktopImage: StaticImageData | string;
+  mobileImage: StaticImageData | string;
   tags: string[];
-  featured?: boolean;
   category?: string;
+  featured?: boolean;
 };
 
 export type SkillItem = {
