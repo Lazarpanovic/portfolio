@@ -4,8 +4,8 @@ export const projects: Project[] = [
   {
     title: "Personal Finance Tracker",
     description:
-      "A full stack finance tracking application for managing income, expenses, categories, budgets, and financial insights through a clean dashboard experience.",
-    href: "https://...",
+      "A full stack finance tracking application for managing income, expenses, categories, budgets, and financial insights through a clean dashboard experience with a modern Next.js frontend and NestJS backend.",
+    href: "https://finance-tracker.lazarpanovic.dev",
     desktopImage: "/personal-finance-laptop.png",
     mobileImage: "/personal-finance-mobile.png",
     tags: ["Next.js", "NestJS", "PostgreSQL", "TypeScript"],
@@ -15,8 +15,8 @@ export const projects: Project[] = [
   {
     title: "MW Concept",
     description:
-      "A premium storefront concept for selling design and tech services, with service browsing, pricing comparison, cart flow, multilingual support, and polished responsive UI.",
-    href: "https://...",
+      "A premium responsive storefront concept for presenting design and tech services, featuring service browsing, pricing comparison, cart flow, multilingual support, and a polished Tailwind CSS interface.",
+    href: "https://mw-concept.lazarpanovic.dev",
     desktopImage: "/mw-concept-laptop.png",
     mobileImage: "/mw-concept-mobile.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
@@ -30,6 +30,16 @@ export const projects: Project[] = [
     desktopImage: "/lucky-spin-laptop.png",
     mobileImage: "/lucky-spin-mobile.png",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    category: "Frontend",
+  },
+  {
+    title: "TaskFlow",
+    description:
+      "A modern Kanban project management dashboard with sprint planning, backlog management, drag-and-drop task workflows, ticket reordering, reports, settings, light/dark mode, responsive SaaS-style UI, and localStorage persistence.",
+    href: "https://taskflow.lazarpanovic.dev",
+    desktopImage: "/taskflow-laptop.png",
+    mobileImage: "/taskflow-mobile.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "dnd-kit", "localStorage"],
     category: "Frontend",
   },
 ];
