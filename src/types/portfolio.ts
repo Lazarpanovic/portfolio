@@ -6,7 +6,9 @@ export type Project = {
   description: string;
   href: string;
   desktopImage: StaticImageData | string;
+  darkDesktopImage?: StaticImageData | string;
   mobileImage: StaticImageData | string;
+  darkMobileImage?: StaticImageData | string;
   tags: string[];
   category?: string;
   featured?: boolean;

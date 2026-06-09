@@ -25,9 +25,22 @@ export default function FeaturedProjectCard({
               alt="Laptop view"
               width={1100}
               height={700}
-              className="w-full max-w-[760px] object-contain transition duration-500 group-hover:scale-[1.02]"
+              className={`w-full max-w-[760px] object-contain transition duration-500 group-hover:scale-[1.02] ${
+                project.darkDesktopImage ? "dark:hidden" : ""
+              }`}
               priority
             />
+
+            {project.darkDesktopImage ? (
+              <Image
+                src={project.darkDesktopImage}
+                alt="Laptop dark view"
+                width={1100}
+                height={700}
+                className="hidden w-full max-w-[760px] object-contain transition duration-500 group-hover:scale-[1.02] dark:block"
+                priority
+              />
+            ) : null}
 
             {/* Phone */}
             <Image
@@ -35,8 +48,20 @@ export default function FeaturedProjectCard({
               alt="Mobile view"
               width={400}
               height={800}
-              className="xs:w-[230px] absolute bottom-[10%] right-[-15%] z-10 w-[200px] object-contain drop-shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-[-6deg] group-hover:scale-[1.05] sm:w-[350px] md:bottom-[6%] md:right-[-5%] md:w-[440px] lg:bottom-[5%] lg:right-[-10%] lg:w-[340px]"
+              className={`xs:w-[230px] absolute bottom-[10%] right-[-15%] z-10 w-[200px] object-contain drop-shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-[-6deg] group-hover:scale-[1.05] sm:w-[350px] md:bottom-[6%] md:right-[-5%] md:w-[440px] lg:bottom-[5%] lg:right-[-10%] lg:w-[340px] ${
+                project.darkMobileImage ? "dark:hidden" : ""
+              }`}
             />
+
+            {project.darkMobileImage ? (
+              <Image
+                src={project.darkMobileImage}
+                alt="Mobile dark view"
+                width={400}
+                height={800}
+                className="xs:w-[230px] absolute bottom-[10%] right-[-15%] z-10 hidden w-[200px] object-contain drop-shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-[-6deg] group-hover:scale-[1.05] dark:block sm:w-[350px] md:bottom-[6%] md:right-[-5%] md:w-[440px] lg:bottom-[5%] lg:right-[-10%] lg:w-[340px]"
+              />
+            ) : null}
           </div>
         </div>
 
